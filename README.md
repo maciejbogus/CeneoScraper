@@ -14,3 +14,15 @@
 |dla ilu osob nieprzydatna|span[id^="votes-no"]|useless|int
 |data wystawienia opinii|user-post__published > time:nth-child(1)["datetime]|publish_date|date
 |data zakupu|user-post__published > time:nth-child(1)["datetime]|purchase_date|date
+
+## ETAPY PRACY
+
+1. Pobieranie pojedyńczych zmiennych skłądowych danej opinii
+2. Zapisanie wszystkich składowych danej opinii do słownika
+3. Pobranie wszystkich opinii o danym produkcie
+4. Zapisanie wzystkich opinii do pliku .json
+5. Zaktualizowanie kodu o możliwość wskazania konkretnego produktu przez użytkownika
+6. Optymalizacja kodu:
+    a. Utworzenie funkcji do ekstrakcji elementów składowych
+    b. Utworzenie słonika selektorów
+    c. Użycie dictionary comprehension do pobrania skłądowych opjedyńczej opinii na podstawie słownika selektorów
